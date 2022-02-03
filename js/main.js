@@ -1,4 +1,6 @@
 (function(storyContent) {
+    var delayParagraph = 100.0;
+    var delayChoice = 100.0;
 
     var story = new inkjs.Story(storyContent);
 
@@ -45,7 +47,7 @@
             // Fade in paragraph after a short delay
             showAfter(delay, paragraphElement);
 
-            delay += 200.0;
+            delay += delayParagraph;
         }
 
         // Create HTML choices from ink choices
@@ -59,7 +61,7 @@
 
             // Fade choice in after a short delay
             showAfter(delay, choiceParagraphElement);
-            delay += 200.0;
+            delay += delayChoice;
 
             // Click on choice
             var choiceAnchorEl = choiceParagraphElement.querySelectorAll("a")[0];
