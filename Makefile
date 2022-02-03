@@ -14,10 +14,10 @@ tools/inklecate: tools/inklecate_linux.zip
 	cd tools && unzip inklecate_linux.zip && touch inklecate
 	
 tools/inklecate_linux.zip:
-	wget -o tools/inklecate_linux.zip https://github.com/inkle/ink/releases/download/v1.0.0/inklecate_linux.zip	
+	wget -O tools/inklecate_linux.zip https://github.com/inkle/ink/releases/download/v1.0.0/inklecate_linux.zip	
 
 tools/Ink.tmLanguage:
-	wget -o tools/Ink.tmLanguage https://github.com/inkle/ink-tmlanguage/releases/download/0.2.3/Ink.tmLanguage
+	wget -O tools/Ink.tmLanguage https://github.com/inkle/ink-tmlanguage/releases/download/0.2.3/Ink.tmLanguage
 		# to use in Sublime:
 		# open file "tools/Ink.tmLanguage"
 		# Select from Menu: "Tools/Developer/New Syntax from Ink.tmLanguage..."
