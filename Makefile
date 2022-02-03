@@ -15,3 +15,14 @@ tools/inklecate: tools/inklecate_linux.zip
 	
 tools/inklecate_linux.zip:
 	wget -o tools/inklecate_linux.zip https://github.com/inkle/ink/releases/download/v1.0.0/inklecate_linux.zip	
+
+tools/Ink.tmLanguage:
+	wget -o tools/Ink.tmLanguage https://github.com/inkle/ink-tmlanguage/releases/download/0.2.3/Ink.tmLanguage
+		# to use in Sublime:
+		# open file "tools/Ink.tmLanguage"
+		# Select from Menu: "Tools/Developer/New Syntax from Ink.tmLanguage..."
+		# Sublime will generate and open new file "Ink.sublime-syntax"
+		# Save file in default folder (e.g. "%AppData%\Sublime Text 3\Packages\User\")
+		# Open file "story.ink"
+		# Open Command palette Ctrl+Shift+P and search for "set syntax ink", confirm with enter.
+		# 
