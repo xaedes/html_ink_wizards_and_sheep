@@ -1,1 +1,0 @@
-var storyContent = ﻿{"inkVersion":20,"root":[["^Hello, world!","\n",["done",{"#n":"g-0"}],null],"done",null],"listDefs":{}}
