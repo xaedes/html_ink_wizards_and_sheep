@@ -3,7 +3,7 @@
 all : js/story.js
 
 MAIN_STORY_FILE = main.ink
-STORY_FILES = $(MAIN_STORY_FILE) common_functions.ink main_menu.ink game_loop.ink prolog.ink
+STORY_FILES = $(MAIN_STORY_FILE) common_functions.ink main_menu.ink game_loop.ink prolog.ink print_functions.ink inventory.ink market.ink
 MAIN_STORY_FILEPATH = $(addprefix story/,$(MAIN_STORY_FILE))
 STORY_FILEPATHS = $(addprefix story/,$(STORY_FILES))
 

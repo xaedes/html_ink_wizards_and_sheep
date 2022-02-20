@@ -1,9 +1,15 @@
 
 === game_loop ===
 
-You currently have {print_num_unit(inventory_books, "book", "books")}.
-You currently have {print_num_unit(inventory_books, "sheet", "sheets")} of parchment.
+-> begin
 
+= begin
+
+-> inventory.show(->game_loop.choices)
+
+= choices
+
++ [Go to market] -> market(->game_loop)
 + [Continue] -> game_loop
 + [Back to Main Menu] -> main_menu
 
