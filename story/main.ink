@@ -1,3 +1,9 @@
+INCLUDE common_functions.ink
+INCLUDE main_menu.ink
+INCLUDE game_loop.ink
+INCLUDE prolog.ink
 
-<h1>Wizards and sheep</h1>
+VAR inventory_books = 0
+VAR inventory_parchment = 0
 
+-> main_menu

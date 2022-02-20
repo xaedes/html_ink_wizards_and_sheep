@@ -2,12 +2,18 @@
 .PHONY : all
 all : js/story.js
 
+MAIN_STORY_FILE = main.ink
+STORY_FILES = $(MAIN_STORY_FILE) common_functions.ink main_menu.ink game_loop.ink prolog.ink
+MAIN_STORY_FILEPATH = $(addprefix story/,$(MAIN_STORY_FILE))
+STORY_FILEPATHS = $(addprefix story/,$(STORY_FILES))
+
+
 js/story.js: js/story_template.js js/story.json
 	cat js/story_template.js > js/story.js
 	cat js/story.json >> js/story.js
 
-js/story.json: story/main.ink tools/inklecate
-	tools/inklecate -j -o js/story_with_bom.json story/main.ink
+js/story.json: tools/inklecate $(STORY_FILEPATHS)
+	tools/inklecate -j -o js/story_with_bom.json $(MAIN_STORY_FILEPATH)
 	iconv -f utf-8 -t utf-16le js/story_with_bom.json | iconv -f utf-16 -t utf-8 > js/story.json
 
 tools/inklecate: tools/inklecate_linux.zip
