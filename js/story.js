@@ -1,1 +1,1 @@
-var storyContent = {"inkVersion":20,"root":[["^Hello, world!","\n",["done",{"#n":"g-0"}],null],"done",null],"listDefs":{}}
+var storyContent = {"inkVersion":20,"root":[["^<h1>Wizards and sheep</h1>","\n",["done",{"#n":"g-0"}],null],"done",null],"listDefs":{}}
